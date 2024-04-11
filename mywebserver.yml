@@ -7,5 +7,6 @@
       name: apache2
       state: present
   - name: start webserver on ansible nodes
-    service: apache2
-    state: started
+    service: 
+      name: apache2
+      state: started
