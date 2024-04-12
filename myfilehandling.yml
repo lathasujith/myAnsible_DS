@@ -18,3 +18,7 @@
        url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.87/bin/apache-tomcat-9.0.87.zip
        dest: /home/ubuntu/apache-tomcat-9.0.87.zip
        force_basic_auth: yes
+  - name: copy index file into nodeside
+    template:
+       src: myindex.j2
+       dest: /var/www/html/index.html
