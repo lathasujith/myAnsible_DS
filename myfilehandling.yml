@@ -13,3 +13,8 @@
     copy:
       src: mystatictestfile
       dest: /home/ubuntu/mystatictestfile
+  - name: download internet file
+    get_url: 
+       url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.87/bin/apache-tomcat-9.0.87.zip
+       dest: /home/ubuntu/apache-tomcat-9.0.87.zip
+       force_basic_auth: yes
