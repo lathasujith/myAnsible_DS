@@ -8,3 +8,8 @@
     apt:
       name: apache2
       state: present 
+
+  - name: copy file into remote servers
+    copy:
+      src: mystatictestfile
+      dest: /home/ubuntu/mystatictestfile
