@@ -4,4 +4,9 @@
   tasks:
   - name: I want to execute direct command
     command: hostname -f
+    register: myhostname
+
+  - name: display first task result
+    debug: 
+       msg: "{{myhostname}}"
        
