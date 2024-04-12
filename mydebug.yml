@@ -9,4 +9,16 @@
   - name: display first task result
     debug: 
        msg: "{{myhostname}}"
+
+  - name: install git
+    apt:
+       name: git
+       state: present
+    when: myhostname.stderr !=""
+
+  - name: install wget
+    apt: 
+       name: wget
+       state: present
+    when: myhostname.stderr == ""
        
