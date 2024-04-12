@@ -4,7 +4,3 @@
 [myappserver]
 172.31.14.227
 
-[mywebservers:vars]
-var= value
-mywebpackonubuntu= apache2
-mywebpackonredhat=httpd
